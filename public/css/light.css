@@ -1,3 +1,11 @@
+body {
+  background-image: url('/images/light/background.png');
+  background-size: 98px 98px; }
+
+section {
+  background-image: url('/images/light/background-secondary.png');
+  background-size: 98px 98px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -65,8 +73,7 @@ p {
     color: #555555;
     border-bottom: 1px dotted #555555; }
 
-html, body {
-  background: #ffffff;
+body {
   color: #555555; }
 
 nav {
@@ -79,7 +86,7 @@ nav {
     color: #222222;
     margin-right: 10px; }
   nav span {
-    color: #aaaaaa;
+    color: #cccccc;
     font-weight: bold; }
     nav span strong {
       color: #222222; }
@@ -105,7 +112,7 @@ menu#theme {
   font-size: 14px;
   cursor: pointer; }
   menu#theme a {
-    color: #aaaaaa;
+    color: #cccccc;
     margin-left: 10px; }
     menu#theme a.active {
       color: #222222; }
@@ -125,7 +132,7 @@ footer {
       display: inline-block;
       margin: 0 5px; }
       footer ul li a {
-        color: #aaaaaa; }
+        color: #cccccc; }
 
 header {
   padding: 200px 0;
@@ -160,7 +167,7 @@ section {
       display: inline-block; }
     section .feature i.large {
       font-size: 36px;
-      color: #aaaaaa;
+      color: #cccccc;
       display: block;
       margin-bottom: 20px; }
 

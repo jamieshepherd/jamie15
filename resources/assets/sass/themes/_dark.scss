@@ -15,9 +15,14 @@ $contrast: white;
 
 // Dark specific styles
 
+body {
+    background: $background-primary;
+}
+
 footer {
     background: url('/images/section-arrow-dark.png') top center no-repeat;
 }
+
 section {
     background: url('/images/section-arrow-light.png') top center no-repeat;
 }

@@ -1,3 +1,6 @@
+body {
+  background: #262c31; }
+
 footer {
   background: url('/images/section-arrow-dark.png') top center no-repeat; }
 
@@ -71,8 +74,7 @@ p {
     color: #ebdbcc;
     border-bottom: 1px dotted #ebdbcc; }
 
-html, body {
-  background: #262c31;
+body {
   color: #ebdbcc; }
 
 nav {

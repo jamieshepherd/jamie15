@@ -27,7 +27,7 @@
         </ul>
         <menu id="theme">
             <a href="/settings?theme=light" @if(session('theme') == 'light')) class="active" @endif><i class="fa fa-sun-o"></i></a>
-            <a href="/settings?theme=dark" @if(session('theme') == 'dark')) class="active" @endif><i class="fa fa-moon-o"></i></a>
+            <a href="/settings?theme=dark" @if(session('theme') != 'light')) class="active" @endif><i class="fa fa-moon-o"></i></a>
         </menu>
         <header>
             <h1>Hi.</h1>
