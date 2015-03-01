@@ -1,0 +1,11 @@
+section {
+    text-align: center;
+    .resume-block {
+        display: inline-block;
+        max-width: 800px;
+        text-align: center;
+        p {
+            max-width: 800px;
+        }
+    }
+}

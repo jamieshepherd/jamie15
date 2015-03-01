@@ -1,0 +1,34 @@
+form {
+    display: inline-block;
+    width: 800px;
+    text-align: left;
+    margin-bottom: -20px;
+    input, textarea {
+        padding: 10px;
+        background: none;
+        border: none;
+        outline: none;
+        color: $text-primary;
+        font-size: 16px;
+        border: 1px dotted $text-secondary;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    input {
+        display: inline-block;
+        &.name, &.email {
+            width: 49%;
+        }
+        &.name {
+            float: left;
+        }
+        &.email {
+            float: right;
+        }
+    }
+    textarea {
+        width: 100%;
+        min-height: 150px;
+        resize:vertical;
+    }
+}

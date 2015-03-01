@@ -19,10 +19,9 @@ body {
     background: $background-primary;
 }
 
-footer {
-    background: url('/images/section-arrow-dark.png') top center no-repeat;
-}
-
 section {
     background: url('/images/section-arrow-light.png') top center no-repeat;
+    &:nth-of-type(2n) {
+        background: url('/images/section-arrow-dark.png') top center no-repeat;
+    }
 }

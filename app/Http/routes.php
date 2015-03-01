@@ -12,4 +12,10 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/resume', function() {
+    return view('resume');
+});
+Route::get('/contact', function() {
+    return view('contact');
+});
 Route::get('/settings', 'SettingsController@edit');

@@ -67,14 +67,29 @@ a {
 
 p {
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin-bottom: 20px; }
   p a {
     text-decoration: none;
     color: #555555;
     border-bottom: 1px dotted #555555; }
 
+input, textarea {
+  font-family: "ff-tisa-sans-web-pro"; }
+
 body {
   color: #555555; }
+
+section {
+  background-color: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  padding: 70px 0 50px; }
+  section i.large {
+    font-size: 36px;
+    color: #cccccc;
+    display: block;
+    margin-bottom: 20px; }
 
 nav {
   position: fixed;
@@ -121,18 +136,58 @@ menu#theme {
 
 footer {
   text-align: center;
-  width: 100%;
-  font-size: 13px;
-  padding: 70px 0 40px; }
-  footer p {
+  margin: 0 auto;
+  font-size: 13px; }
+  footer span {
     font-size: 13px; }
   footer ul {
-    margin: 5px 0; }
+    margin-top: 10px; }
     footer ul li {
       display: inline-block;
       margin: 0 5px; }
       footer ul li a {
         color: #cccccc; }
+
+form {
+  display: inline-block;
+  width: 800px;
+  text-align: left;
+  margin-bottom: -20px; }
+  form input, form textarea {
+    padding: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #555555;
+    font-size: 16px;
+    border: 1px dotted #cccccc;
+    margin-bottom: 20px;
+    box-sizing: border-box; }
+  form input {
+    display: inline-block; }
+    form input.name, form input.email {
+      width: 49%; }
+    form input.name {
+      float: left; }
+    form input.email {
+      float: right; }
+  form textarea {
+    width: 100%;
+    min-height: 150px;
+    resize: vertical; }
+
+a.box, input[type="submit"], input[type="button"] {
+  width: auto;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 7px 25px;
+  border: 1px solid #FB6609;
+  color: #FB6609;
+  transition: 0.3s all;
+  cursor: pointer; }
+  a.box:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background: #FB6609;
+    color: #ffffff; }
 
 header {
   padding: 200px 0;
@@ -142,34 +197,23 @@ header {
   header p {
     font-size: 24px;
     margin-bottom: 50px; }
-  header a.box {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 7px 25px;
-    border: 1px solid #FB6609;
-    color: #FB6609;
-    transition: 0.3s all; }
-    header a.box:hover {
-      background: #FB6609;
-      color: #ffffff; }
+
+section .feature {
+  width: 330px;
+  margin: 0 20px;
+  display: inline-block;
+  vertical-align: top; }
+  section .feature a {
+    display: inline-block; }
 
 section {
-  background-color: #f6f6f6;
-  width: 100%;
-  text-align: center;
-  padding: 50px 0; }
-  section .feature {
-    width: 330px;
-    margin: 40px 20px;
+  text-align: center; }
+  section .resume-block {
     display: inline-block;
-    vertical-align: top; }
-    section .feature a {
-      display: inline-block; }
-    section .feature i.large {
-      font-size: 36px;
-      color: #cccccc;
-      display: block;
-      margin-bottom: 20px; }
+    max-width: 800px;
+    text-align: center; }
+    section .resume-block p {
+      max-width: 800px; }
 
 
 /*# sourceMappingURL=light.css.map */

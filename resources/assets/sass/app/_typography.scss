@@ -1,5 +1,5 @@
 body {
-    font-family: "ff-tisa-sans-web-pro";
+    font-family: $sans;
 }
 
 strong {
@@ -7,7 +7,7 @@ strong {
 }
 
 h1, h2, h3 {
-    font-family: "ff-tisa-web-pro";
+    font-family: $serif;
     font-weight: bold;
     color: $highlight;
 }
@@ -34,9 +34,14 @@ a {
 p {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 20px;
     a {
         text-decoration: none;
         color: $text-primary;
         border-bottom: 1px dotted $text-primary;
     }
+}
+
+input, textarea {
+        font-family: $sans;
 }
