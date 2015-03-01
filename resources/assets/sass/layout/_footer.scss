@@ -1,0 +1,19 @@
+footer {
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    padding: 70px 0 40px;
+    p {
+        font-size: 13px;
+    }
+    ul {
+        margin: 5px 0;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            a {
+                color: $text-secondary;
+            }
+        }
+    }
+}

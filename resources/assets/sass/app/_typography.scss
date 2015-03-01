@@ -1,0 +1,42 @@
+body {
+    font-family: "ff-tisa-sans-web-pro";
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    font-family: "ff-tisa-web-pro";
+    font-weight: bold;
+    color: $highlight;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: $text-primary;
+    &:hover {
+        color: $highlight;
+        border-bottom: 1px dotted $highlight;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    a {
+        text-decoration: none;
+        color: $text-primary;
+        border-bottom: 1px dotted $text-primary;
+    }
+}
