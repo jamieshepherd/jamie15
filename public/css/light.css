@@ -40,7 +40,7 @@ strong {
 h1, h2, h3 {
   font-family: "ff-tisa-web-pro";
   font-weight: bold;
-  color: #f1cc77; }
+  color: #FB6609; }
 
 h1 {
   font-size: 50px;
@@ -52,22 +52,22 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #ebdbcc; }
+  color: #555555; }
   a:hover {
-    color: #f1cc77;
-    border-bottom: 1px dotted #f1cc77; }
+    color: #FB6609;
+    border-bottom: 1px dotted #FB6609; }
 
 p {
   font-size: 16px;
   line-height: 24px; }
   p a {
     text-decoration: none;
-    color: #ebdbcc;
-    border-bottom: 1px dotted #ebdbcc; }
+    color: #555555;
+    border-bottom: 1px dotted #555555; }
 
 html, body {
-  background: #262c31;
-  color: #ebdbcc; }
+  background: #ffffff;
+  color: #555555; }
 
 nav {
   position: fixed;
@@ -76,15 +76,15 @@ nav {
   font-size: 14px;
   cursor: pointer; }
   nav i {
-    color: white;
+    color: #222222;
     margin-right: 10px; }
   nav span {
-    color: #565e65;
+    color: #aaaaaa;
     font-weight: bold; }
     nav span strong {
-      color: white; }
+      color: #222222; }
   nav:hover i, nav:hover span strong {
-    color: #f1cc77; }
+    color: #FB6609; }
 
 #nav {
   position: fixed;
@@ -105,12 +105,12 @@ menu#theme {
   font-size: 14px;
   cursor: pointer; }
   menu#theme a {
-    color: #565e65;
+    color: #aaaaaa;
     margin-left: 10px; }
     menu#theme a.active {
-      color: white; }
+      color: #222222; }
     menu#theme a:hover {
-      color: #f1cc77; }
+      color: #FB6609; }
 
 footer {
   text-align: center;
@@ -125,7 +125,7 @@ footer {
       display: inline-block;
       margin: 0 5px; }
       footer ul li a {
-        color: #565e65; }
+        color: #aaaaaa; }
 
 header {
   padding: 200px 0;
@@ -139,15 +139,15 @@ header {
     text-decoration: none;
     font-size: 18px;
     padding: 7px 25px;
-    border: 1px solid #f1cc77;
-    color: #f1cc77;
+    border: 1px solid #FB6609;
+    color: #FB6609;
     transition: 0.3s all; }
     header a.box:hover {
-      background: #f1cc77;
-      color: #262c31; }
+      background: #FB6609;
+      color: #ffffff; }
 
 section {
-  background-color: #1f2326;
+  background-color: #f6f6f6;
   width: 100%;
   text-align: center;
   padding: 50px 0; }
@@ -160,7 +160,7 @@ section {
       display: inline-block; }
     section .feature i.large {
       font-size: 36px;
-      color: #565e65;
+      color: #aaaaaa;
       display: block;
       margin-bottom: 20px; }
 

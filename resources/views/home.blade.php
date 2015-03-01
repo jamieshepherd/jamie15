@@ -1,7 +1,13 @@
 <html>
     <head>
         <title>Jamie 2015</title>
-        <link media="all" type="text/css" rel="stylesheet" href="{{ elixir("css/dark.css") }}">
+        <link media="all" type="text/css" rel="stylesheet" href="
+            @if(session('theme') == 'light')
+                {{ elixir("css/light.css") }}
+            @else
+                {{ elixir("css/dark.css") }}
+            @endif
+        ">
         <link media="all" type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script src="/js/helpers.js"></script>
         <script src="//use.typekit.net/zun7twj.js"></script>
@@ -20,8 +26,8 @@
             <li><a href="/contact">Contact</a></li>
         </ul>
         <menu id="theme">
-            <a href="/settings?theme=light"><i class="fa fa-sun-o"></i></a>
-            <a href="/settings?theme=dark" class="active"><i class="fa fa-moon-o"></i></a>
+            <a href="/settings?theme=light" @if(session('theme') == 'light')) class="active" @endif><i class="fa fa-sun-o"></i></a>
+            <a href="/settings?theme=dark" @if(session('theme') == 'dark')) class="active" @endif><i class="fa fa-moon-o"></i></a>
         </menu>
         <header>
             <h1>Hi.</h1>
