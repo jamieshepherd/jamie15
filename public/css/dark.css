@@ -113,12 +113,12 @@ menu#theme {
   font-size: 14px;
   cursor: pointer; }
   menu#theme a {
-    color: #565e65;
-    margin-left: 10px; }
-    menu#theme a.active {
-      color: white; }
+    color: #565e65; }
+    menu#theme a i {
+      padding-bottom: 5px; }
     menu#theme a:hover {
-      color: #f1cc77; }
+      color: #f1cc77;
+      border: none; }
 
 footer {
   text-align: center;

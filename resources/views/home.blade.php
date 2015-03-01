@@ -26,8 +26,11 @@
             <li><a href="/contact">Contact</a></li>
         </ul>
         <menu id="theme">
-            <a href="/settings?theme=light" @if(session('theme') == 'light')) class="active" @endif><i class="fa fa-sun-o"></i></a>
-            <a href="/settings?theme=dark" @if(session('theme') != 'light')) class="active" @endif><i class="fa fa-moon-o"></i></a>
+            @if(session('theme') == 'light')
+                <a href="/settings?theme=dark"><i class="fa fa-moon-o"></i></a>
+            @else
+                <a href="/settings?theme=light"/><i class="fa fa-sun-o"></i></a>
+            @endif
         </menu>
         <header>
             <h1>Hi.</h1>

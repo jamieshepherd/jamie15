@@ -43,12 +43,12 @@ menu {
         cursor: pointer;
         a {
             color: $text-secondary;
-            margin-left: 10px;
-            &.active {
-                color: $contrast;
+            i {
+                padding-bottom: 5px;
             }
             &:hover {
                 color: $highlight;
+                border: none;
             }
         }
     }

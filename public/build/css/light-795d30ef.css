@@ -112,12 +112,12 @@ menu#theme {
   font-size: 14px;
   cursor: pointer; }
   menu#theme a {
-    color: #cccccc;
-    margin-left: 10px; }
-    menu#theme a.active {
-      color: #222222; }
+    color: #cccccc; }
+    menu#theme a i {
+      padding-bottom: 5px; }
     menu#theme a:hover {
-      color: #FB6609; }
+      color: #FB6609;
+      border: none; }
 
 footer {
   text-align: center;
