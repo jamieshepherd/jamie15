@@ -1,28 +1,37 @@
 body {
-    font-family: $sans;
+    font-family: $font;
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 800;
 }
 
-h1, h2, h3 {
-    font-family: $serif;
-    font-weight: bold;
-    color: $highlight;
+h1, h2 {
+    font-weight: 800;
 }
 
 h1 {
-    font-size: 50px;
-    margin-bottom: 50px;
+  color: $highlight;
+  font-size: 50px;
+  margin-bottom: 50px;
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: $text-primary;
+  &:after {
+    content: '';
+    background: #dddddd;
+    width: 50px;
+    height: 1px;
+    display: block;
+    margin: 15px auto 0;
+  }
 }
 
 a {
+    font-weight: 300;
     text-decoration: none;
     color: $text-primary;
     &:hover {
@@ -35,6 +44,7 @@ p {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
+    font-weight: 300;
     a {
         text-decoration: none;
         color: $text-primary;
@@ -43,5 +53,5 @@ p {
 }
 
 input, textarea {
-        font-family: $sans;
+        font-family: $font;
 }

@@ -2,10 +2,10 @@ body {
     color: $text-primary;
 }
 section {
-    background-color: $background-secondary;
+    border-top: 1px solid #cccccc;
     width: 100%;
     text-align: center;
-    padding: 70px 0 50px;
+    padding: 50px 0 50px;
     i.large {
         font-size: 36px;
         color: $text-secondary;

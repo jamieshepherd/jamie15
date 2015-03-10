@@ -5,14 +5,14 @@ nav {
     font-size: 14px;
     cursor: pointer;
     i {
-        color: $contrast;
+        color: $text-primary;
         margin-right: 10px;
     }
     span {
         color: $text-secondary;
-        font-weight: bold;
+        font-weight: 300;
         strong {
-            color: $contrast;
+            color: $text-primary;
         }
     }
     &:hover {

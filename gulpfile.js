@@ -12,12 +12,6 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass([
-                "dark.scss",
-                "light.scss"
-            ])
-       .version([
-                "public/css/dark.css",
-                "public/css/light.css"
-       ]);
+    mix.sass('app.scss')
+       .version('css/app.css');
 });

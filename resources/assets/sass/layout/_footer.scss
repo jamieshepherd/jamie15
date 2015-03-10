@@ -1,6 +1,7 @@
 footer {
+    border-top: 1px solid #cccccc;
     text-align: center;
-    margin: 0 auto;
+    padding: 30px 0;
     font-size: 13px;
     span {
         font-size: 13px;
@@ -9,7 +10,7 @@ footer {
         margin-top: 10px;
         li {
             display: inline-block;
-            margin: 0 5px;
+            margin: 0 3px;
             a {
                 color: $text-secondary;
             }
