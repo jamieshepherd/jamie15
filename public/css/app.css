@@ -78,11 +78,14 @@ p {
 input, textarea {
   font-family: "proxima-nova"; }
 
+.fa.fa-copyright {
+  font-size: 11px; }
+
 body {
   color: #444444; }
 
 section {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #eeeeee;
   width: 100%;
   text-align: center;
   padding: 50px 0 50px; }
@@ -102,8 +105,7 @@ nav {
     color: #444444;
     margin-right: 10px; }
   nav span {
-    color: #cccccc;
-    font-weight: 300; }
+    color: #cccccc; }
     nav span strong {
       color: #444444; }
   nav:hover i, nav:hover span strong {
@@ -136,7 +138,7 @@ menu#theme {
       border: none; }
 
 footer {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #eeeeee;
   text-align: center;
   padding: 30px 0;
   font-size: 13px; }
@@ -158,13 +160,14 @@ form {
   form input, form textarea {
     padding: 10px;
     background: none;
-    border: none;
     outline: none;
     color: #444444;
     font-size: 16px;
-    border: 1px dotted #cccccc;
+    border: 1px solid #dddddd;
     margin-bottom: 20px;
     box-sizing: border-box; }
+    form input:focus, form textarea:focus {
+      border-color: #45ada8; }
   form input {
     display: inline-block; }
     form input.name, form input.email {
@@ -186,7 +189,8 @@ a.box, input[type="submit"], input[type="button"] {
   border: 1px solid #45ada8;
   color: #45ada8;
   transition: 0.3s all;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 300; }
   a.box:hover, input[type="submit"]:hover, input[type="button"]:hover {
     background: #45ada8;
     color: #ffffff; }
@@ -201,7 +205,7 @@ header {
     margin-bottom: 50px; }
 
 section .feature {
-  width: 400px;
+  width: 450px;
   margin: 0 20px;
   display: inline-block;
   vertical-align: top; }
