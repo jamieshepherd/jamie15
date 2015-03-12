@@ -1,0 +1,40 @@
+.project {
+  max-width: 1080px;
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+  .preview {
+    width: 525px;
+    float: left;
+    margin-right: 40px;
+    display: inline-block;
+    box-shadow: 2px 2px 3px #aaaaaa;
+    border-radius: 5px;
+  }
+  .description {
+    width: 505px;
+    display: inline-block;
+    float: right;
+  }
+  h2 {
+    margin-bottom: 5px;
+    &:after {
+      content: none;
+    }
+  }
+  h3 {
+    font-weight: 800;
+    &:after {
+      content: '';
+      background: #dddddd;
+      width: 50px;
+      height: 1px;
+      display: block;
+      margin: 20px 0;
+    }
+  }
+  a.box {
+    display: inline-block;
+    font-size: 16px;
+  }
+}

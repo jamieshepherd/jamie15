@@ -15,7 +15,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/resume', function() {
     return view('resume');
 });
+Route::get('/projects', function() {
+    return view('projects');
+});
 Route::get('/contact', function() {
     return view('contact');
 });
-Route::get('/settings', 'SettingsController@edit');
