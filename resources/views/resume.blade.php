@@ -1,6 +1,6 @@
 @extends('_layout.base')
 @section('body')
-        <header>
+        <header id="header">
             <h1>Jamie Shepherd</h1>
             <p>Résumé / Curriculum vitae</p>
             <a href="/resume/download" class="box">Download PDF</a>

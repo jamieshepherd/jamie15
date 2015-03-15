@@ -3,6 +3,14 @@ header {
     width: 100%;
     vertical-align: center;
     text-align: center;
+    background: url("/images/examplebackground.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+    h1, p {
+      color: #ffffff;
+    }
     p {
         font-size: 24px;
         margin-bottom: 50px;

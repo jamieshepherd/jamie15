@@ -1,15 +1,16 @@
 a.box, input[type="submit"], input[type="button"] {
     width: auto;
     text-decoration: none;
-    font-size: 18px;
-    padding: 7px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px 20px;
     border: 1px solid $highlight;
     color: $highlight;
     transition: 0.3s all;
     cursor: pointer;
     font-weight: 300;
     &:hover {
-        background: $highlight;
-        color: $background-primary;
+        border: 1px solid #ffffff;
+        color: #ffffff;
     }
 }

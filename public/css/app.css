@@ -41,7 +41,7 @@ h1, h2 {
   font-weight: 800; }
 
 h1 {
-  color: #45ada8;
+  color: #f1cc77;
   font-size: 50px;
   margin-bottom: 50px; }
 
@@ -62,8 +62,8 @@ a {
   text-decoration: none;
   color: #444444; }
   a:hover {
-    color: #45ada8;
-    border-bottom: 1px dotted #45ada8; }
+    color: #f1cc77;
+    border-bottom: 1px dotted #f1cc77; }
 
 p {
   font-size: 16px;
@@ -81,6 +81,10 @@ input, textarea {
 .fa.fa-copyright {
   font-size: 11px; }
 
+html, body {
+  height: 100%;
+  background: #ffffff; }
+
 body {
   color: #444444; }
 
@@ -95,52 +99,64 @@ section {
     display: block;
     margin-bottom: 20px; }
 
+#wrapper {
+  transition: all 0.2s; }
+  #wrapper.faded {
+    margin-left: 200px; }
+
 nav {
   position: fixed;
   top: 15px;
   left: 15px;
   font-size: 14px;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 3;
+  transition: all 0.3s; }
   nav i {
-    color: #444444;
     margin-right: 10px; }
-  nav span {
-    color: #cccccc; }
-    nav span strong {
-      color: #444444; }
-  nav:hover i, nav:hover span strong {
-    color: #45ada8; }
+  nav .primary {
+    font-weight: 700; }
+  nav .secondary {
+    font-weight: 300;
+    opacity: 0.3; }
+  nav:hover i {
+    color: #f1cc77; }
+  nav.pinned {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    padding: 10px; }
 
 #nav {
   position: fixed;
-  top: 40px;
-  left: 15px;
+  top: 0px;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background: #191b1c;
+  padding: 40px 0;
   font-size: 13px;
-  opacity: 0;
-  transition: all 0.2s; }
-  #nav li {
+  transition: all 0.2s;
+  z-index: 2; }
+  #nav i {
+    width: 20px; }
+  #nav a {
+    color: #ffffff;
     text-transform: uppercase;
-    margin: 10px 0; }
-
-menu#theme {
-  display: inline-block;
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  font-size: 14px;
-  cursor: pointer; }
-  menu#theme a {
-    color: #cccccc; }
-    menu#theme a i {
-      padding-bottom: 5px; }
-    menu#theme a:hover {
-      color: #45ada8;
+    margin: 15px;
+    display: block; }
+    #nav a i {
+      color: #444444; }
+    #nav a:hover {
+      color: #f1cc77;
       border: none; }
+      #nav a:hover i {
+        color: #f1cc77; }
 
 footer {
   border-top: 1px solid #eeeeee;
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
   font-size: 13px; }
   footer span {
     font-size: 13px; }
@@ -165,7 +181,7 @@ form {
     margin-bottom: 20px;
     box-sizing: border-box; }
     form input:focus, form textarea:focus {
-      border-color: #45ada8; }
+      border-color: #f1cc77; }
   form input {
     display: inline-block; }
     form input.name, form input.email {
@@ -182,22 +198,27 @@ form {
 a.box, input[type="submit"], input[type="button"] {
   width: auto;
   text-decoration: none;
-  font-size: 18px;
-  padding: 7px 25px;
-  border: 1px solid #45ada8;
-  color: #45ada8;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: 1px solid #f1cc77;
+  color: #f1cc77;
   transition: 0.3s all;
   cursor: pointer;
   font-weight: 300; }
   a.box:hover, input[type="submit"]:hover, input[type="button"]:hover {
-    background: #45ada8;
+    border: 1px solid #ffffff;
     color: #ffffff; }
 
 header {
   padding: 120px 0;
   width: 100%;
   vertical-align: center;
-  text-align: center; }
+  text-align: center;
+  background: url("/images/examplebackground.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  header h1, header p {
+    color: #ffffff; }
   header p {
     font-size: 24px;
     margin-bottom: 50px; }

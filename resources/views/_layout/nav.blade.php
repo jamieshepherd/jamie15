@@ -1,18 +1,11 @@
 <nav onClick="toggleNav()">
-    <i class="fa fa-bars"></i><span><strong>JAMIE.SH</strong>EPHERD</span>
+    <i class="fa fa-bars"></i><span class="primary">JAMIE.SH</span><span class="secondary">EPHERD</span>
 </nav>
 <ul id="nav">
-    <li><a href="/">Home</a></li>
-    <li><a href="/resume">Résumé / CV</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/tutorials">Tutorials</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <a href="/"><li><i class="fa fa-home"></i>                 Home</li></a>
+    <a href="/resume"><li><i class="fa fa-graduation-cap"></i> Résumé / CV</li></a>
+    <a href="/blog"><li><i class="fa fa-quote-right"></i>      Blog</li></a>
+    <a href="/projects"><li><i class="fa fa-flask"></i>        Projects</li></a>
+    <a href="/tutorials"><li><i class="fa fa-rocket"></i>      Tutorials</li></a>
+    <a href="/contact"><li><i class="fa fa-comments-o"></i>    Contact</li></a>
 </ul>
-<menu id="theme">
-    @if(session('theme') == 'light')
-        <a href="/settings?theme=dark"><i class="fa fa-moon-o"></i></a>
-    @else
-        <a href="/settings?theme=light"/><i class="fa fa-sun-o"></i></a>
-    @endif
-</menu>

@@ -1,6 +1,6 @@
 @extends('_layout.base')
 @section('body')
-        <header>
+        <header id="head">
             <h1>Hi.</h1>
             <p>I'm Jamie, a designer and developer from Plymouth, UK.</p>
             <a href="/projects" class="box">View my work</a>

@@ -10,5 +10,7 @@
     </head>
     <body>
 @include('_layout.nav')
+<div id="wrapper">
 @yield('body')
 @include('_layout.footer')
+</div>
