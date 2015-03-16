@@ -3,8 +3,8 @@
         <header style="background-image: url('/images/background-river.jpg')">
             <h1>Jamie Shepherd</h1>
             <p>Résumé / Curriculum vitae</p>
-            <a href="/resume/download" class="box">Download PDF</a>
-            <a href="/contact" class="box">Contact me</a>
+            <a href="/resume/download" class="box"><i class="fa fa-file-pdf-o"></i> Download PDF</a>
+            <a href="/contact" class="box"><i class="fa fa-envelope-o"></i> Contact me</a>
         </header>
         <section>
             <div class="resume-block">

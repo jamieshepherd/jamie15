@@ -15,8 +15,14 @@ Route::get('/', 'HomeController@index');
 Route::get('/resume', function() {
     return view('resume');
 });
+Route::get('/blog', function() {
+    return view('blog');
+});
 Route::get('/projects', function() {
     return view('projects');
+});
+Route::get('/tutorials', function() {
+    return view('tutorials');
 });
 Route::get('/contact', function() {
     return view('contact');

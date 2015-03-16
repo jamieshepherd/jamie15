@@ -1,10 +1,8 @@
 @extends('_layout.base')
 @section('body')
-        <header>
-            <h1>Hi.</h1>
-            <p>I'm Jamie, a designer and developer from Plymouth, UK.</p>
-            <a href="/projects" class="box"><i class="fa fa-flask"></i> View my work</a>
-            <a href="/contact" class="box"><i class="fa fa-envelope-o"></i> Get in touch</a>
+        <header style="background-image: url('/images/background-contact.jpg')">
+            <h1>Blog</h1>
+            <p>Thoughts on industry, technology, and computer science.</p>
         </header>
         <section>
             <div class="feature">

@@ -233,6 +233,8 @@ a.box, input[type="submit"], input[type="button"] {
   font-weight: 300;
   background-position: center 120%;
   background-size: 8px 4px; }
+  a.box i, input[type="submit"] i, input[type="button"] i {
+    margin-right: 2px; }
   a.box:hover, input[type="submit"]:hover, input[type="button"]:hover {
     background: url('/images/button-arrow.png') center bottom no-repeat;
     background-size: 7px 4px;
