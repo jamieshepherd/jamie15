@@ -62,8 +62,8 @@ a {
   text-decoration: none;
   color: #444444; }
   a:hover {
-    color: #f1cc77;
-    border-bottom: 1px dotted #f1cc77; }
+    color: #45ada8;
+    border-bottom: 1px dotted #45ada8; }
 
 p {
   font-size: 16px;
@@ -104,6 +104,25 @@ section {
   #wrapper.faded {
     margin-left: 200px; }
 
+header {
+  padding: 120px 0;
+  width: 100%;
+  vertical-align: center;
+  text-align: center;
+  background: url("/images/examplebackground.jpg") no-repeat;
+  background-size: cover; }
+  header a {
+    color: #f1cc77;
+    border-color: #f1cc77; }
+    header a:hover {
+      color: white;
+      border-color: white; }
+  header h1, header p {
+    color: #ffffff; }
+  header p {
+    font-size: 24px;
+    margin-bottom: 50px; }
+
 nav {
   position: fixed;
   top: 15px;
@@ -112,7 +131,13 @@ nav {
   cursor: pointer;
   color: #ffffff;
   z-index: 3;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   nav i {
     margin-right: 10px; }
   nav .primary {
@@ -181,7 +206,7 @@ form {
     margin-bottom: 20px;
     box-sizing: border-box; }
     form input:focus, form textarea:focus {
-      border-color: #f1cc77; }
+      border-color: #45ada8; }
   form input {
     display: inline-block; }
     form input.name, form input.email {
@@ -205,23 +230,24 @@ a.box, input[type="submit"], input[type="button"] {
   color: #f1cc77;
   transition: 0.3s all;
   cursor: pointer;
-  font-weight: 300; }
+  font-weight: 300;
+  background-position: center 120%;
+  background-size: 8px 4px; }
   a.box:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background: url('/images/button-arrow.png') center bottom no-repeat;
+    background-size: 7px 4px;
     border: 1px solid #ffffff;
     color: #ffffff; }
 
-header {
-  padding: 120px 0;
-  width: 100%;
-  vertical-align: center;
-  text-align: center;
-  background: url("/images/examplebackground.jpg") no-repeat center center fixed;
-  background-size: cover; }
-  header h1, header p {
+section a.box, section input[type="submit"], section input[type="button"] {
+  border-color: #45ada8;
+  color: #45ada8;
+  font-size: 14px; }
+  section a.box:hover, section input[type="submit"]:hover, section input[type="button"]:hover {
+    background: #45ada8 url('/images/button-arrow.png') center bottom no-repeat;
+    background-size: 7px 4px;
+    border: 1px solid #ffffff;
     color: #ffffff; }
-  header p {
-    font-size: 24px;
-    margin-bottom: 50px; }
 
 section .feature {
   width: 450px;
@@ -270,8 +296,7 @@ section {
       display: block;
       margin: 20px 0; }
   .project a.box {
-    display: inline-block;
-    font-size: 16px; }
+    display: inline-block; }
 
 
 /*# sourceMappingURL=app.css.map */

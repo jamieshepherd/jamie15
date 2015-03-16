@@ -1,6 +1,6 @@
 @extends('_layout.base')
 @section('body')
-        <header id="header">
+        <header style="background-image: url('/images/background-river.jpg')">
             <h1>Jamie Shepherd</h1>
             <p>Résumé / Curriculum vitae</p>
             <a href="/resume/download" class="box">Download PDF</a>

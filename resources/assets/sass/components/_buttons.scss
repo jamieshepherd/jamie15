@@ -9,8 +9,25 @@ a.box, input[type="submit"], input[type="button"] {
     transition: 0.3s all;
     cursor: pointer;
     font-weight: 300;
+    background-position: center 120%;
+    background-size: 8px 4px;
     &:hover {
+        background: url('/images/button-arrow.png') center bottom no-repeat;
+        background-size: 7px 4px;
         border: 1px solid #ffffff;
         color: #ffffff;
     }
+}
+section {
+  a.box, input[type="submit"], input[type="button"] {
+    border-color: $highlight-secondary;
+    color: $highlight-secondary;
+    font-size: 14px;
+    &:hover {
+      background: $highlight-secondary url('/images/button-arrow.png') center bottom no-repeat;
+      background-size: 7px 4px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+    }
+  }
 }

@@ -1,8 +1,9 @@
 @extends('_layout.base')
 @section('body')
-        <header>
+        <header style="background-image: url('/images/background-macbook.jpg')">
             <h1>Projects</h1>
             <p>Here are some of the things I've been working on.</p>
+            <a href="http://github.com/jamieshepherd" class="box"><i class="fa fa-github"></i> View my Github</a>
         </header>
         <section>
             <div class="project">

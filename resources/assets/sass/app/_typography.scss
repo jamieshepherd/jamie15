@@ -20,14 +20,14 @@ h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: $text-primary;
-  &:after {
-    content: '';
-    background: #dddddd;
-    width: 50px;
-    height: 1px;
-    display: block;
-    margin: 15px auto 0;
-  }
+    &:after {
+      content: '';
+      background: #dddddd;
+      width: 50px;
+      height: 1px;
+      display: block;
+      margin: 15px auto 0;
+    }
 }
 
 a {
@@ -35,8 +35,8 @@ a {
     text-decoration: none;
     color: $text-primary;
     &:hover {
-        color: $highlight;
-        border-bottom: 1px dotted $highlight;
+        color: $highlight-secondary;
+        border-bottom: 1px dotted $highlight-secondary;
     }
 }
 

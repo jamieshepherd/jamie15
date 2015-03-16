@@ -28,3 +28,12 @@ var foo = window.onscroll = function (){
         navbtn.className = '';
     }
 }
+
+window.addEventListener("keyup", function(e){
+    if(e.keyCode == 27) {
+        var nav = document.getElementById('nav');
+        if(nav.className == 'visible') {
+            toggleNav();
+        }
+    }
+}, false);
