@@ -27,3 +27,7 @@ Route::get('/tutorials', function() {
 Route::get('/contact', function() {
     return view('contact');
 });
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);

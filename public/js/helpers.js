@@ -37,3 +37,8 @@ window.addEventListener("keyup", function(e){
         }
     }
 }, false);
+
+window.onload = function() {
+    toggleNav();
+    toggleNav();
+}

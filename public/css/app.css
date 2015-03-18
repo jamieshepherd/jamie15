@@ -75,7 +75,7 @@ p {
     color: #444444;
     border-bottom: 1px dotted #444444; }
 
-input, textarea {
+input, textarea, button {
   font-family: "proxima-nova"; }
 
 .fa.fa-copyright {
@@ -220,7 +220,7 @@ form {
     min-height: 150px;
     resize: vertical; }
 
-a.box, input[type="submit"], input[type="button"] {
+a.box, input[type="submit"], input[type="button"], button {
   width: auto;
   text-decoration: none;
   font-size: 14px;
@@ -231,25 +231,31 @@ a.box, input[type="submit"], input[type="button"] {
   transition: 0.3s all;
   cursor: pointer;
   font-weight: 300;
-  background-position: center 120%;
+  background: none center 120%;
   background-size: 8px 4px; }
-  a.box i, input[type="submit"] i, input[type="button"] i {
+  a.box x i, input[type="submit"] x i, input[type="button"] x i, button x i {
     margin-right: 2px; }
-  a.box:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  a.box:hover, input[type="submit"]:hover, input[type="button"]:hover, button:hover {
     background: url('/images/button-arrow.png') center bottom no-repeat;
     background-size: 7px 4px;
     border: 1px solid #ffffff;
     color: #ffffff; }
 
-section a.box, section input[type="submit"], section input[type="button"] {
+section a.box, section input[type="submit"], section input[type="button"], section button {
   border-color: #45ada8;
   color: #45ada8;
   font-size: 14px; }
-  section a.box:hover, section input[type="submit"]:hover, section input[type="button"]:hover {
+  section a.box:hover, section input[type="submit"]:hover, section input[type="button"]:hover, section button:hover {
     background: #45ada8 url('/images/button-arrow.png') center bottom no-repeat;
     background-size: 7px 4px;
     border: 1px solid #ffffff;
     color: #ffffff; }
+
+form.admin {
+  text-align: center;
+  max-width: 300px; }
+  form.admin input, form.admin button {
+    width: 100%; }
 
 section .feature {
   width: 450px;

@@ -1,4 +1,4 @@
-a.box, input[type="submit"], input[type="button"] {
+a.box, input[type="submit"], input[type="button"], button {
     width: auto;
     text-decoration: none;
     font-size: 14px;
@@ -9,8 +9,8 @@ a.box, input[type="submit"], input[type="button"] {
     transition: 0.3s all;
     cursor: pointer;
     font-weight: 300;
-    background-position: center 120%;
-    background-size: 8px 4px;
+    background: none center 120%;
+    background-size: 8px 4px;x
     i {
       margin-right: 2px;
     }
@@ -22,7 +22,7 @@ a.box, input[type="submit"], input[type="button"] {
     }
 }
 section {
-  a.box, input[type="submit"], input[type="button"] {
+  a.box, input[type="submit"], input[type="button"], button {
     border-color: $highlight-secondary;
     color: $highlight-secondary;
     font-size: 14px;

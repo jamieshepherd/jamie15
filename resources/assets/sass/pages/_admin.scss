@@ -1,0 +1,9 @@
+form {
+  &.admin {
+    text-align: center;
+    max-width: 300px;
+    input, button {
+      width: 100%;
+    }
+  }
+}
