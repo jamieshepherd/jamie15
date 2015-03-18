@@ -5,13 +5,25 @@
             <p>Thoughts on industry, technology, and computer science.</p>
         </header>
         <section>
-            <div class="feature">
-                <h2>Design</h2>
-                <p>I develop user friendly, yet aesthetically pleasing solutions to design problems, and build them with <a href="">HTML5</a> &amp; <a href="">CSS3</a>. I design responsive layouts with a heavy focus on user experience (UX). Here are some more words about me.</p>
+            <div class="blog-preview">
+                <h2>Lorem ipsum met</h2>
+                <h3>1 month ago</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quis sequi totam. Aspernatur debitis eveniet expedita harum molestiae nulla tempora vel?</p>
             </div>
-            <div class="feature">
-                <h2>Development</h2>
-                <p>I utilise server-side languages such as <a href="">PHP</a> and popular frameworks such as <a href="">Laravel</a> to develop enterprise level products for small and large scale projects. I also work on a number of <a href="http://github.com/jamieshepherd">open source projects.</a></p>
+            <div class="blog-preview">
+                <h2>Lorem ipsum met</h2>
+                <h3>14 March 2015</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quis sequi totam. Aspernatur debitis eveniet expedita harum molestiae nulla tempora vel? Aspernatur aut ea eius impedit non porro rerum voluptatibus?</p>
+            </div>
+            <div class="blog-preview">
+                <h2>Lorem ipsum met</h2>
+                <h3>14 March 2015</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quis sequi totam. Aspernatur debitis eveniet expedita harum molestiae nulla tempora vel? Aspernatur aut ea eius impedit non porro rerum voluptatibus?</p>
+            </div>
+            <div class="blog-preview">
+                <h2>Lorem ipsum met</h2>
+                <h3>14 March 2015</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quis sequi totam. Aspernatur debitis eveniet expedita harum molestiae nulla tempora vel? Aspernatur aut ea eius impedit non porro rerum voluptatibus?</p>
             </div>
         </section>
 @stop

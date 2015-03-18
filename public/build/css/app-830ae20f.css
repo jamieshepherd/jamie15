@@ -268,6 +268,22 @@ section {
     section .resume-block p {
       max-width: 800px; }
 
+.blog-preview {
+  margin: 0 auto 40px;
+  width: 100%;
+  max-width: 750px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: left;
+  padding-bottom: 20px; }
+  .blog-preview h2 {
+    margin-bottom: 7px; }
+    .blog-preview h2:after {
+      content: none; }
+  .blog-preview h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #cccccc; }
+
 .project {
   max-width: 1080px;
   text-align: left;
