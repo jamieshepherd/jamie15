@@ -257,6 +257,14 @@ form.admin {
   form.admin input, form.admin button {
     width: 100%; }
 
+.admin-actions {
+  background: #f6f6f6;
+  border-radius: 3px;
+  width: auto;
+  padding: 10px; }
+  .admin-actions li {
+    display: inline-block; }
+
 section .feature {
   width: 450px;
   margin: 0 20px;

@@ -27,6 +27,11 @@ Route::get('/tutorials', function() {
 Route::get('/contact', function() {
     return view('contact');
 });
+
+
+Route::get('/admin', function() {
+   return view('admin/index');
+});
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',
