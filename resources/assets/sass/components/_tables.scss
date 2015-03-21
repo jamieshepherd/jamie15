@@ -1,0 +1,16 @@
+table {
+  width: 100%;
+  thead {
+    font-weight: 600;
+  }
+  td, th {
+    padding: 10px;
+  }
+  tr {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  &.admin {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}

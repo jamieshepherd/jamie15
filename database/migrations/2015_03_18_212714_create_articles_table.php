@@ -15,6 +15,7 @@ class CreateArticlesTable extends Migration {
         Schema::create('articles', function(Blueprint $table)
         {
             $table->increments('id');
+            $table->boolean('public')->default(false);
             $table->string('type'); // article, tutorial
             $table->string('title');
             $table->string('slug')->unique();
@@ -30,7 +31,7 @@ class CreateArticlesTable extends Migration {
 	 */
 	public function down()
 	{
-		//
+        Schema::drop('articles');
 	}
 
 }

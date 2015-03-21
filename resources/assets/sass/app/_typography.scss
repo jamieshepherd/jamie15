@@ -1,9 +1,41 @@
 body {
     font-family: $font;
+    font-weight: 300;
 }
 
 strong {
     font-weight: 800;
+}
+
+em {
+    font-style: italic;
+}
+
+code {
+    font-family: 'source-code-pro';
+    font-weight: 400;
+    font-size: 16px;
+    background: #f3f3f3;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+pre {
+  display: block;
+  width: 100%;
+  background: #f3f3f3;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  code {
+    display: inline;
+    &.hljs {
+      padding: 15px;
+    }
+    line-height: 22px;
+  }
 }
 
 h1, h2 {
@@ -30,8 +62,23 @@ h2 {
     }
 }
 
+h4 {
+  font-size: 24px;
+  color: $text-primary;
+  text-align: left;
+
+  &:after {
+    content: '';
+    background: #dddddd;
+    width: 50px;
+    height: 1px;
+    display: block;
+    margin: 15px 0 40px 0;
+    text-align: left;
+  }
+}
+
 a {
-    font-weight: 300;
     text-decoration: none;
     color: $text-primary;
     &:hover {
@@ -44,7 +91,6 @@ p {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
-    font-weight: 300;
     a {
         text-decoration: none;
         color: $text-primary;

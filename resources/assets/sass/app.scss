@@ -12,9 +12,11 @@
 
 @import
 'components/forms',
-'components/buttons';
+'components/buttons',
+'components/tables';
 
 @import
+'pages/article',
 'pages/admin',
 'pages/home',
 'pages/resume',

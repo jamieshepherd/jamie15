@@ -3,7 +3,7 @@
 @section('body')
 <section>
     <h2>Sign in</h2>
-    <form class="admin" action="/auth/login" method="POST">
+    <form class="auth" action="/auth/login" method="POST">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input type="text" name="email" placeholder="Email address">
         <input type="password" name="password" placeholder="Password"><br/>

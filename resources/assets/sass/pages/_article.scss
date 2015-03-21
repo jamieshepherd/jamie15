@@ -1,0 +1,23 @@
+.article, .comments {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.article {
+  font-size: 18px;
+  text-align: left;
+  p {
+    font-size: 18px;
+  }
+  ul {
+    li {
+      list-style-type: disc;
+      margin-left: 20px;
+      line-height: 22px;
+    }
+  }
+}
+
+.comments {
+  margin-top: 50px;
+}
