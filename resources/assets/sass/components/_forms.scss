@@ -34,4 +34,33 @@ form {
         min-height: 150px;
         resize:vertical;
     }
+
+    select {
+      -webkit-appearance: none;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background: #ffffff;
+      border-radius: 0;
+      border-color: #dddddd;
+      font-size: 16px;
+      color: #555555;
+      option {
+        padding: 10px;
+        height: 40px;
+        line-height: 50px;
+        margin: 50px;
+      }
+    }
+    .dropdown {
+      display: block;
+      position: relative;
+      &:after {
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        position: absolute;
+        top: 14px;
+        right: 10px;
+      }
+    }
 }

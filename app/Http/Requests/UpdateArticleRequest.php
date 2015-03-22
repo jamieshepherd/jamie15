@@ -2,7 +2,7 @@
 
 use App\Http\Requests\Request;
 
-class CreateArticleRequest extends Request {
+class UpdateArticleRequest extends Request {
 
     /**
      * Determine if the user is authorized to make this request.
@@ -23,7 +23,7 @@ class CreateArticleRequest extends Request {
     {
         return [
             'title'		=>	'required|min:3',
-            'slug'		=>	'required|min:3',
+            'slug'		=>	'required|min:3|unique:articles,slug,'.$this->segment(3),
             'text'   	=>	'required|min:3',
         ];
     }

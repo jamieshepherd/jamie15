@@ -84,6 +84,12 @@ h2 {
     display: block;
     margin: 15px auto 0; }
 
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #444444; }
+
 h4 {
   font-size: 24px;
   color: #444444;
@@ -113,7 +119,7 @@ p {
     color: #444444;
     border-bottom: 1px dotted #444444; }
 
-input, textarea, button {
+input, textarea, button, select {
   font-family: "proxima-nova"; }
 
 .fa.fa-copyright {
@@ -257,6 +263,30 @@ form {
     width: 100%;
     min-height: 150px;
     resize: vertical; }
+  form select {
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 0;
+    border-color: #dddddd;
+    font-size: 16px;
+    color: #555555; }
+    form select option {
+      padding: 10px;
+      height: 40px;
+      line-height: 50px;
+      margin: 50px; }
+  form .dropdown {
+    display: block;
+    position: relative; }
+    form .dropdown:after {
+      content: '\f0d7';
+      font-family: 'FontAwesome';
+      position: absolute;
+      top: 14px;
+      right: 10px; }
 
 a.box, input[type="submit"], input[type="button"], button {
   width: auto;
@@ -316,7 +346,7 @@ table {
     line-height: 22px; }
 
 .comments {
-  margin-top: 50px; }
+  margin-top: 100px; }
 
 form.auth {
   text-align: center;

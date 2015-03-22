@@ -42,3 +42,12 @@ window.onload = function() {
     toggleNav();
     toggleNav();
 }
+
+function generateSlug() {
+    var current = document.getElementById('title').value;
+    current = current.toLowerCase()
+        .replace(/[^\w ]+/g,'')
+        .replace(/ +/g,'-')
+    ;
+    document.getElementById('slug').value = current;
+}

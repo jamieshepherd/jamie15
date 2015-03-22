@@ -1,13 +1,13 @@
 @extends('_layout.base')
 @section('body')
-        <header style="background-image: url('/images/uploads/{{ $article->background }}')">
+        <header style="background-image: url('/images/uploads/{{ $article->id }}/header.jpg')">
             <h1>{{ $article->title}}</h1>
             <p>{{ $article->created_at->diffForHumans() }}</p>
         </header>
         <section>
             <div class="article">
                 <script>hljs.initHighlightingOnLoad();</script>
-                {!! (new Parsedown())->text($article->content) !!}
+                {!! (new Parsedown())->text($article->text) !!}
             </div>
             <div class="comments">
                 <div id="disqus_thread"></div>

@@ -9,7 +9,7 @@
             <div class="blog-preview">
                 <h2><a href="{{ Request::url() }}/{{ $article->id }}/{{ $article->slug }}">{{ $article->title }}</a></h2>
                 <h3><i class="fa fa-calendar"></i> {{ $article->created_at->diffForHumans() }}</h3>
-                {{ strip_tags((new Parsedown())->text($article->content)) }}
+                {{ substr(strip_tags((new Parsedown())->text($article->text)), 0, 250) }}...
             </div>
             @endforeach
         </section>

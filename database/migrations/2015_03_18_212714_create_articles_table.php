@@ -19,7 +19,7 @@ class CreateArticlesTable extends Migration {
             $table->string('type'); // article, tutorial
             $table->string('title');
             $table->string('slug')->unique();
-            $table->text('content');
+            $table->text('text');
             $table->timestamps();
         });
 	}

@@ -8,6 +8,7 @@
             <li><a href="/projects">Projects</a></li>
             <li><a href="/tutorials">Tutorials</a></li>
             <li><a href="/contact">Contact</a></li>
+            @if(Auth::check())<li><a href="/admin"><i class="fa fa-lock"></i> Admin</a></li>@endif
         </ul>
     </footer>
 </body>

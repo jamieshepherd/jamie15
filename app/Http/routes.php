@@ -18,28 +18,22 @@ Route::get('/resume', function() {
 Route::get('/projects', function() {
     return view('projects');
 });
-Route::get('/blog', 'BlogController@index');
-Route::get('/blog/{id}/{slug?}', 'BlogController@show');
-Route::get('/tutorials', 'TutorialController@index');
+Route::get('/blog', 'ArticleController@index');
+Route::get('/blog/{id}/{slug?}', 'ArticleController@show');
+Route::get('/tutorials', 'ArticleController@index');
+Route::get('/tutorials/{id}/{slug?}', 'ArticleController@show');
 Route::get('/contact', function() {
     return view('contact');
 });
 
-
-Route::get('/admin', function() {
-   return view('admin/index');
+Route::group(array('middleware' => 'auth'), function() {
+    Route::get('/admin', 'ArticleController@adminIndex');
+    Route::get('/admin/create', 'ArticleController@create');
+    Route::post('/admin/create', 'ArticleController@store');
+    Route::get('/admin/edit/{id}', 'ArticleController@edit');
+    Route::post('/admin/edit/{id}', 'ArticleController@update');
+    Route::get('/admin/delete/{id}', 'ArticleController@destroy');
 });
-
-Route::get('/admin/blog', 'BlogController@adminIndex');
-Route::get('/admin/blog/create', 'BlogController@create');
-Route::post('/admin/blog/create', 'BlogController@store');
-Route::get('/admin/blog/edit', 'BlogController@edit');
-Route::post('/admin/blog/edit', 'BlogController@update');
-Route::get('/admin/tutorials', 'TutorialController@adminIndex');
-Route::get('/admin/tutorials/create', 'TutorialController@create');
-Route::post('/admin/tutorials/create', 'TutorialController@store');
-Route::get('/admin/tutorials/edit', 'TutorialController@edit');
-Route::post('/admin/tutorials/edit', 'TutorialController@update');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
