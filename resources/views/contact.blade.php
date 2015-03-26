@@ -7,10 +7,11 @@
         </header>
         <section>
             <h2>Hi Jamie...</h2>
-            <form>
-                <input type="text" class="name" placeholder="Your name" autofocus>
-                <input type="text" class="email" placeholder="Your email address">
-                <textarea placeholder="Your message"></textarea>
+            <form action="/contact" method="POST">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input name="name" type="text" class="name" placeholder="Your name" autofocus>
+                <input name="email" type="text" class="email" placeholder="Your email address">
+                <textarea name="message" placeholder="Your message"></textarea>
                 <input type="submit" value="Send message">
             </form>
         </section>

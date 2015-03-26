@@ -25,6 +25,7 @@ Route::get('/tutorials/{id}/{slug?}', 'ArticleController@show');
 Route::get('/contact', function() {
     return view('contact');
 });
+Route::post('/contact', 'RouteController@postContact');
 
 Route::group(array('middleware' => 'auth'), function() {
     Route::get('/admin', 'ArticleController@adminIndex');

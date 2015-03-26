@@ -3,7 +3,6 @@
 </nav>
 <ul id="nav">
     <a href="/"><li><i class="fa fa-home"></i>                 Home</li></a>
-    <a href="/resume"><li><i class="fa fa-graduation-cap"></i> Résumé / CV</li></a>
     <a href="/blog"><li><i class="fa fa-quote-right"></i>      Blog</li></a>
     <a href="/projects"><li><i class="fa fa-flask"></i>        Projects</li></a>
     <a href="/tutorials"><li><i class="fa fa-rocket"></i>      Tutorials</li></a>

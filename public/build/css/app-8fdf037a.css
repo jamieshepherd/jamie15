@@ -424,9 +424,10 @@ section {
     margin-bottom: 5px; }
     .project h2:after {
       content: none; }
-  .project h3 {
-    font-weight: 800; }
-    .project h3:after {
+  .project h5 {
+    font-weight: 800;
+    color: #888888; }
+    .project h5:after {
       content: '';
       background: #dddddd;
       width: 50px;
