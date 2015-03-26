@@ -1,0 +1,30 @@
+.notify-box {
+  background: #71C8B5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  width: 350px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin: 0 auto;
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  opacity: 0;
+  animation: fadeOut 5s linear forwards;
+  &.error{
+    background: #f8f7f7;
+    color: #ffffff;
+  }
+}
+
+@keyframes fadeOut {
+  0%  { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; transform: translateY(0px);}
+  99% { opacity: 0; transform: translateY(-10px);}
+  100% { opacity: 0; }
+}

@@ -11,21 +11,19 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'RouteController@index');
 Route::get('/resume', function() {
     return view('resume');
 });
-Route::get('/projects', function() {
-    return view('projects');
-});
+
+Route::get('/projects', 'RouteController@showProjects');
+Route::get('/contact', 'RouteController@showContact');
+Route::post('/contact', 'RouteController@postContact');
+
 Route::get('/blog', 'ArticleController@index');
 Route::get('/blog/{id}/{slug?}', 'ArticleController@show');
 Route::get('/tutorials', 'ArticleController@index');
 Route::get('/tutorials/{id}/{slug?}', 'ArticleController@show');
-Route::get('/contact', function() {
-    return view('contact');
-});
-Route::post('/contact', 'RouteController@postContact');
 
 Route::group(array('middleware' => 'auth'), function() {
     Route::get('/admin', 'ArticleController@adminIndex');

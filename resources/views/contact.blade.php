@@ -15,4 +15,7 @@
                 <input type="submit" value="Send message">
             </form>
         </section>
+    @if(Session::has('message'))
+        <div class="notify-box">{{ Session::get('message') }}</div>
+    @endif
 @stop
