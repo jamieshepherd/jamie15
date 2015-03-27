@@ -27,6 +27,8 @@ Route::get('/tutorials/{id}/{slug?}', 'ArticleController@show');
 
 Route::group(array('middleware' => 'auth'), function() {
     Route::get('/admin', 'ArticleController@adminIndex');
+    Route::get('/admin/changepassword', 'RouteController@getChangePassword');
+    Route::post('/admin/changepassword', 'RouteController@postChangePassword');
     Route::get('/admin/create', 'ArticleController@create');
     Route::post('/admin/create', 'ArticleController@store');
     Route::get('/admin/edit/{id}', 'ArticleController@edit');

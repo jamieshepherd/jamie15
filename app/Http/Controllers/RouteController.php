@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use Auth;
+use Hash;
+use Input;
 use Mail;
 use Request;
 
@@ -62,5 +64,18 @@ class RouteController extends Controller
         session()->flash('message', 'Thanks! Your message was sent successfully.');
         return redirect()->back();
 	}
+
+    public function getChangePassword()
+    {
+        return view('admin.password');
+    }
+
+    public function postChangePassword()
+    {
+        $user           = Auth::user();
+        $user->password = Hash::make(Input::get('password'));
+        $user->save();
+        return redirect('/admin');
+    }
 
 }
