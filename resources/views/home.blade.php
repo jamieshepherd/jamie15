@@ -9,7 +9,7 @@
         <section>
             <div class="feature">
                 <h2>Design</h2>
-                <p>I develop user friendly, yet aesthetically pleasing solutions to design problems, and build them with <a href="">HTML5</a> &amp; <a href="">CSS3</a>. I design responsive layouts with a heavy focus on user experience (UX). Here are some more words about me.</p>
+                <p>I develop user friendly, yet aesthetically pleasing solutions to design problems, and build them with <a href="">HTML5</a> &amp; <a href="">CSS3</a>. I design responsive layouts with a heavy focus on user experience (UX). I have a strong knowledge of modern front-end technologies.</p>
             </div>
             <div class="feature">
                 <h2>Development</h2>

@@ -21,6 +21,7 @@ class ArticleController extends Controller
         if($segment == 'tutorials') $type = 'tutorial';
         if($segment == 'blog') $type = 'blog';
         $articles = Article::where('type', '=', $type)
+            ->orderBy('created_at','DESC')
             ->where('public', '=', true)
             ->paginate(10);
         return view($segment)->with(compact('articles'));
@@ -79,9 +80,10 @@ class ArticleController extends Controller
 	public function show($id)
 	{
 		$article = Article::find($id);
+        $title   = $article->title;
 
         if($article->public || Auth::check()) {
-            return view('article')->with(compact('article'));
+            return view('article')->with(compact('article', 'title'));
         } else {
             abort(404);
         }
