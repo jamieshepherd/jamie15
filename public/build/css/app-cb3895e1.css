@@ -238,6 +238,7 @@ footer {
 form {
   display: inline-block;
   max-width: 800px;
+  width: 100%;
   text-align: left;
   margin-bottom: -20px; }
   form input, form textarea {
@@ -348,10 +349,25 @@ table {
   display: inline-block;
   opacity: 0;
   -webkit-animation: fadeOut 5s linear forwards;
-          animation: fadeOut 5s linear forwards; }
+          animation: fadeOut 5s linear forwards;
+  z-index: 5; }
   .notify-box.error {
     background: #f8f7f7;
     color: #ffffff; }
+
+.error-box {
+  background: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  clear: both;
+  display: block;
+  margin-bottom: 30px;
+  padding: 10px; }
+  .error-box li {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 18px; }
 
 @-webkit-keyframes fadeOut {
   0% {

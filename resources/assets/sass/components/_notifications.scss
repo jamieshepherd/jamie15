@@ -15,12 +15,30 @@
   display: inline-block;
   opacity: 0;
   animation: fadeOut 5s linear forwards;
+  z-index: 5;
   &.error{
     background: #f8f7f7;
     color: #ffffff;
   }
 }
 
+.error-box {
+
+  background: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  clear: both;
+  display: block;
+  margin-bottom: 30px;
+  padding: 10px;
+  li {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 18px;
+  }
+
+}
 @keyframes fadeOut {
   0%  { opacity: 0; }
   10% { opacity: 1; }

@@ -8,6 +8,16 @@
         <section>
             <h2>Hi Jamie...</h2>
             <form action="/contact" method="POST">
+                @if($errors->any())
+                    <div class="error-box">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input name="name" type="text" class="name" placeholder="Your name" autofocus>
                 <input name="email" type="text" class="email" placeholder="Your email address">
