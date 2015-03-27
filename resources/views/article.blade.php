@@ -13,7 +13,7 @@
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
                     /* * * CONFIGURATION VARIABLES * * */
-                    var disqus_shortname = 'testetsetsfstest';
+                    var disqus_shortname = 'jamieshepherd';
 
                     /* * * DON'T EDIT BELOW THIS LINE * * */
                     (function() {
