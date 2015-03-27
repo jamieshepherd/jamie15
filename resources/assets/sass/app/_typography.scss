@@ -16,7 +16,7 @@ code {
     font-weight: 400;
     font-size: 16px;
     background: #f3f3f3;
-    padding: 5px;
+    padding: 0 5px;
     border-radius: 3px;
     display: inline-block;
 }
@@ -111,4 +111,13 @@ input, textarea, button, select {
 
 .fa.fa-copyright {
     font-size: 11px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }

@@ -16,6 +16,13 @@
       line-height: 22px;
     }
   }
+  h2 {
+    padding-top: 20px;
+    margin-bottom: 0;
+    &:after {
+      content: none;
+    }
+  }
 }
 
 .comments {
