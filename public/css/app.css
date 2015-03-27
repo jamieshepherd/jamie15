@@ -425,6 +425,8 @@ table {
   font-size: 18px;
   text-align: left;
   line-height: 26px; }
+  .article img {
+    width: 100%; }
   .article p {
     font-size: 18px;
     line-height: 26px; }
