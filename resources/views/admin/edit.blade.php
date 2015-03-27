@@ -13,8 +13,8 @@
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="checkbox" name="public" @if($article->public) checked @endif> Visible to public<br/>
             <select name="type">
-                <option value="blog">Blog</option>
-                <option value="tutorial">Tutorial</option>
+                <option value="blog" @if($article->type == 'blog') selected @endif>Blog</option>
+                <option value="tutorial" @if($article->type == 'tutorial') selected @endif>Tutorial</option>
             </select>
             <input id="title" type="text" name="title" placeholder="Title" onkeyup="generateSlug()" autofocus value="{{ $article->title }}">
             <input id="slug" type="text" name="slug" placeholder="URL slug" value="{{ $article->slug }}">
