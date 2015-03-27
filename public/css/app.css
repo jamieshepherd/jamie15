@@ -431,7 +431,7 @@ table {
     margin-left: 20px;
     line-height: 22px; }
   .article h2 {
-    padding-top: 20px;
+    padding: 20px 0;
     margin-bottom: 0; }
     .article h2:after {
       content: none; }
