@@ -6,8 +6,10 @@
 .article {
   font-size: 18px;
   text-align: left;
+  line-height: 26px;
   p {
     font-size: 18px;
+    line-height: 26px;
   }
   ul {
     li {
@@ -22,6 +24,9 @@
     &:after {
       content: none;
     }
+  }
+  strong {
+    font-weight: 600;
   }
 }
 

@@ -423,9 +423,11 @@ table {
 
 .article {
   font-size: 18px;
-  text-align: left; }
+  text-align: left;
+  line-height: 26px; }
   .article p {
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 26px; }
   .article ul li {
     list-style-type: disc;
     margin-left: 20px;
@@ -435,6 +437,8 @@ table {
     margin-bottom: 0; }
     .article h2:after {
       content: none; }
+  .article strong {
+    font-weight: 600; }
 
 .comments {
   margin-top: 100px; }
