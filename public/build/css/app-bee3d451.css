@@ -125,6 +125,14 @@ input, textarea, button, select {
 .fa.fa-copyright {
   font-size: 11px; }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
 html, body {
   height: 100%;
   background: #ffffff; }
@@ -422,6 +430,11 @@ table {
     list-style-type: disc;
     margin-left: 20px;
     line-height: 22px; }
+  .article h2 {
+    padding-top: 20px;
+    margin-bottom: 0; }
+    .article h2:after {
+      content: none; }
 
 .comments {
   margin-top: 100px; }
