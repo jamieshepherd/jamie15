@@ -36,6 +36,11 @@ Route::group(array('middleware' => 'auth'), function() {
     Route::get('/admin/delete/{id}', 'ArticleController@destroy');
 });
 
+// Permanent redirects from 2014
+Route::get('/article/3/{stub?}', function(){
+    return Redirect::to('/tutorials/1/setting-up-mailgun-with-laravel-42', 301);
+});
+
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',
