@@ -1,6 +1,6 @@
 @extends('_layout.base')
 @section('body')
-    <header style="background-image: url('/images/background-tutorials.jpg')">
+    <header style="background-image: url('/images/404.jpg')">
         <h1>404</h1>
         <p>Page not found</p>
     </header>
