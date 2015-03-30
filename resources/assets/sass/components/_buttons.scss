@@ -10,7 +10,8 @@ a.box, input[type="submit"], input[type="button"], button {
     cursor: pointer;
     font-weight: 300;
     background: none center 120%;
-    background-size: 8px 4px;x
+    background-size: 8px 4px;
+    display: inline-block;
     i {
       margin-right: 2px;
     }
