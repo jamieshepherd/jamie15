@@ -16,6 +16,6 @@
     </head>
     <body>
 @include('_layout.nav')
-<div id="wrapper">
+<div id="wrapper" onClick="wrapperClick()">
 @yield('body')
 @include('_layout.footer')

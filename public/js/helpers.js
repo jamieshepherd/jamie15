@@ -1,3 +1,5 @@
+/* This is really bad and very rushed code, please do NOT copy or use it as a style guide, if I ever get time to refactor my personal projects I promise I will come back and update this. */
+
 // Toggle nav open or close
 function toggleNav() {
     var nav = document.getElementById('nav');
@@ -13,6 +15,16 @@ function toggleNav() {
         nav.className = '';
         wrapper.className = '';
         foo();
+    }
+}
+
+// When clicking the wrapper, if nav is open close it
+function wrapperClick() {
+    var nav = document.getElementById('nav');
+    var wrapper = document.getElementById('wrapper');
+
+    if(nav.className == 'visible') {
+        toggleNav();
     }
 }
 
