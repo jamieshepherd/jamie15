@@ -2,7 +2,7 @@
 @section('body')
         <header style="background-image: url('/images/uploads/{{ $article->id }}/header.jpg')">
             <h1>{{ $article->title}}</h1>
-            <p>{{ $article->created_at->diffForHumans() }}</p>
+            <p title="{{ $article->created_at }}">{{ $article->created_at->diffForHumans() }}</p>
         </header>
         <section>
             <div class="article">
