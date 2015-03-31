@@ -1,3 +1,4 @@
+// Toggle nav open or close
 function toggleNav() {
     var nav = document.getElementById('nav');
     var wrapper = document.getElementById('wrapper');
@@ -29,6 +30,7 @@ var foo = window.onscroll = function (){
     }
 }
 
+// Check for the ESC key, if it's pressed, close the nav
 window.addEventListener("keyup", function(e){
     if(e.keyCode == 27) {
         var nav = document.getElementById('nav');
@@ -38,16 +40,17 @@ window.addEventListener("keyup", function(e){
     }
 }, false);
 
+// Reset any strange behaviour that might exist
 window.onload = function() {
     toggleNav();
     toggleNav();
 }
 
+// Generate a URL slug when we create an article
 function generateSlug() {
     var current = document.getElementById('title').value;
     current = current.toLowerCase()
         .replace(/[^\w ]+/g,'')
-        .replace(/ +/g,'-')
-    ;
+        .replace(/ +/g,'-');
     document.getElementById('slug').value = current;
 }
