@@ -40,6 +40,9 @@ Route::group(array('middleware' => 'auth'), function() {
 Route::get('/article/3/{stub?}', function(){
     return Redirect::to('/tutorials/1/setting-up-mailgun-with-laravel-42', 301);
 });
+Route::get('/article/9/{stub?}', function(){
+    return Redirect::to('/tutorials/3/setting-up-ghost-as-a-service-on-ubuntu-linux', 301);
+});
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
