@@ -171,11 +171,14 @@ header {
     header a:hover {
       color: white;
       border-color: white; }
-  header h1, header p {
+  header h1, header p, header time {
     color: #ffffff; }
-  header p {
+  header p, header time {
     font-size: 24px;
     margin-bottom: 50px; }
+
+time.dateModified {
+  display: none; }
 
 nav {
   position: fixed;

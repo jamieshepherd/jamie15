@@ -2,10 +2,11 @@
 @section('body')
         <header style="background-image: url('/images/uploads/{{ $article->id }}/header.jpg')">
             <h1>{{ $article->title}}</h1>
-            <p title="{{ $article->created_at }}">{{ $article->created_at->diffForHumans() }}</p>
+            <time title="{{ $article->created_at }}" itemprop="datePublished" datetime="{{ $article->created_at }}">{{ $article->created_at->diffForHumans() }}</time>
         </header>
         <section>
             <div class="article">
+                <time class="dateModified" itemprop="dateModified" datetime="{{ $article->updated_at }}">{{ $article->updated_at }}</time>
                 <script>hljs.initHighlightingOnLoad();</script>
                 {!! (new Parsedown())->text($article->text) !!}
             </div>
