@@ -4,6 +4,7 @@ html,body {
 }
 body {
     color: $text-primary;
+    overflow-x: hidden;
 }
 section {
     border-top: 1px solid #eeeeee;

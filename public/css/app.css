@@ -138,7 +138,8 @@ html, body {
   background: #ffffff; }
 
 body {
-  color: #444444; }
+  color: #444444;
+  overflow-x: hidden; }
 
 section {
   border-top: 1px solid #eeeeee;
