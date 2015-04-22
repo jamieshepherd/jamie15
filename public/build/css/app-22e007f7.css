@@ -164,7 +164,7 @@ header {
   width: 100%;
   vertical-align: center;
   text-align: center;
-  background: url("/images/examplebackground.jpg") no-repeat;
+  background-repeat: no-repeat;
   background-size: cover; }
   header a {
     color: #f1cc77;
